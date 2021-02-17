@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .abc{
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+        <span>
+
+        </span>
+    <div>
+
+    </div>
+    <p>
+        <a>如果</a>
+    </p>
+</div>
+
+
+
+<input type="text" id="userName">
+
+<button id="hide">隐藏</button>
+
+<button id="show">显示</button>
+
+<li></li>
+<ul>
+
+</ul>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    // $(function () {
+
+    // $("#hide").click(function(){
+    //     // $("p").toggleClass("abc");
+    //     // $("p").get(0).innerHTML = "abcccc";
+    //     // $("p").last().html("1+23456");
+    //     // console.log($("p").text());
+    //     // $("#userName").val();
+    //     // console.log($(this).attr("id","abc"));
+    //     console.log($(this).removeAttr("id"));
+    // });
+
+    // hide | show  隐藏和显示 toggle表示切换
+    // $("#hide").click(function(){
+    //     $("p").hide();
+    // });
+    // $("#show").click(function(){
+    //     $("p").show();
+    // });
+
+    // $("#show").click(function(){
+    //     $("p").toggle();
+    // });
+
+
+    //淡入淡出效果 fadeIn fadeOut
+    $("#hide").click(function(){
+        $("p").fadeOut();
+        $("p").fadeOut("slow");
+        $("p").fadeOut(3000);
+    });
+
+    $("#show").click(function(){
+        $("p").fadeIn();
+        $("p").fadeIn("slow");
+        $("p").fadeIn(1000);
+    });
+
+    //toggle
+    $("#show").click(function(){
+        $("p").fadeToggle(1000);
+    });
+
+
+    // slide 滑动
+    // $("#show").click(function(){
+    //     $("p").slideDown(3000);
+    // });
+    // $("#hide").click(function(){
+    //     $("p").slideUp(3000);
+    // });
+    //     $("#hide").click(function(){
+    //         $("p").slideToggle("fast",function () {
+    //             alert("效果显示完成");
+    //         });
+    //     });
+    //
+    //
+    //
+    // })
+</script>
+</body>
+</html>
